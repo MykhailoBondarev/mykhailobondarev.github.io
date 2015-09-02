@@ -103,9 +103,6 @@ section::after, .about-head::after, .pic-container::after {
   clear: both;
 }
 
-#portfolio {
-  padding: 0 5%;
-}
 #portfolio .pic {
   overflow: hidden;
   width: 300px;
@@ -191,5 +188,14 @@ section::after, .about-head::after, .pic-container::after {
 
   #about img {
     margin: 20px 10px 20px 50px;
+  }
+
+  #education .edu-box a img {
+    width: 200px;
+  }
+
+  .ih-item.square {
+    width: 215px;
+    height: auto;
   }
 }
