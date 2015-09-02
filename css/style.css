@@ -68,7 +68,7 @@ nav, header {
 }
 
 .container {
-  max-width: 1200px;
+  padding: 0;
 }
 
 section {
@@ -126,6 +126,13 @@ section::after, .about-head::after, .pic-container::after {
 #education .edu-box ul {
   margin-top: 20px;
   list-style: none;
+}
+#education .edu-box a {
+  display: block;
+}
+#education .edu-box a img {
+  max-width: 400px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
