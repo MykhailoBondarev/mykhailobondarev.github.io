@@ -1,0 +1,253 @@
+$fontsize: 14px;
+$textcolor: #fff;
+$decorcolor: #2abf5e;
+$hovercolor: #71f605;
+$bgcolor: #000;
+$mob-nav-bg-color1: rgba(0, 255, 127, .9);
+$basicfont: Squada One, Arial;
+
+html, body{
+	font-family: $basicfont;
+	font-size: $fontsize*1.5;	
+	background-color: $bgcolor;	
+	color: $textcolor;	
+}
+
+nav, header {	
+	height: 55px;	
+}
+
+.navbar{
+	position: fixed;	
+	width: 100%;
+}
+
+.navbar-brand{
+	width: 90px;
+	padding: 7px 10px 7px 10px;
+	b{
+		text-transform: uppercase;
+		text-decoration: underline;
+		word-break: break-all;
+	}
+}
+
+#myNavbar{
+	background-color: darken($mob-nav-bg-color1, 27%);	
+	li{		
+		float: none;		
+		a{					
+			border-radius: 0;
+			text-align: center;
+			font-size: $fontsize*3.3;
+			color: $textcolor;
+			text-decoration: underline;
+			transition: 1s;
+		}
+		a:hover, a:focus{
+			background-color: inherit;
+			font-size: $fontsize*4.3;
+		}
+	}
+}
+
+.social-container{
+	width: auto;
+}
+
+.social-btn{
+	color: $decorcolor;
+}
+
+.social-btn:hover, .social-btn:focus{
+	text-decoration: none;
+}
+
+.social-btn::before{
+	font-size: $fontsize*2.7;
+	margin: 0 5px 0 5px;	
+	transition: 2s;
+}
+
+.social-btn:hover::before, .social-btn:focus::before{
+	color: $hovercolor;	
+	-webkit-transform: rotate(360deg);
+  	transform: rotate(360deg);
+}
+
+.container{
+	max-width: 1200px;	
+}
+
+section{
+	font-family: Roboto;
+	margin-top: 30px;
+	padding: 3%;
+	width: 100%;
+	height: auto;
+	border-top: 1px solid $textcolor;
+	border-bottom: 3px solid $textcolor;
+	box-shadow: 0 0 100px 1px rgba(105,105,105, .7);
+}
+
+#about{
+	margin-top: 100px;
+	font-size: $fontsize*1.2;
+	text-align: center;	
+	img{
+		max-width: 250px;
+		width: 100%;
+		margin: 20px 0;
+		border-radius: 20%;
+		border: 7px solid $textcolor;
+		transition: 2s;
+	}	
+}
+
+section::after, .about-head::after, .pic-container::after{
+		content: "";
+		display: block;
+		height: 1px;
+		clear: both;
+	}
+
+#portfolio{
+	padding: 0 5%;
+	.pic{
+		overflow: hidden;
+		width: 300px;
+		height: 300px;
+		padding: 20px;
+		margin: 20px;		
+	}
+	img{
+		max-width: 300px;
+	}
+}
+
+#education{
+	font-family: $basicfont;
+	.edu-box{
+		p{
+			margin: 0;
+		}
+		ul{
+			margin-top: 20px;
+			list-style: none;
+		}
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	#myNavbar{
+	background-color: darken($textcolor, 80%);			
+	li{		
+		float: left;			
+		a{					
+			border-radius: 0;
+			text-align: center;
+			font-size: $fontsize*1.5;
+			color: darken($textcolor, 30%);
+			text-decoration: none;	
+			transition-duration: 1s;
+			position: relative;		
+		 }
+		 a:hover, a:focus{
+		 	color: darken($textcolor, 70%);
+		 	background: lighten($bgcolor, 90%);	
+		 	font-size: inherit;	 	
+		 }
+		 a:focus{
+		 	color: darken($textcolor, 70%);
+		 }
+		 a::after{
+			content:"";	
+			display: block;	
+			position: absolute;
+			top: 50px;
+			left: 0;	
+			width: 0;			
+			height: 5px;					
+			background-color: darken($textcolor, 90%);
+			transition-duration: 1s;					
+		 }
+
+		 a:hover::after{
+			width: 100%;
+		 }
+
+		 a:focus::after{
+		 	width: 100%;
+		 }
+	  }
+	}
+
+	.social-container{
+		position: absolute;
+		top: 0;
+		right: 20px;	
+	}
+
+	.social-btn{
+		position: relative;
+		top: 0;
+		right: 0;
+	}
+	#about{		
+		img{		
+			margin: 20px 10px 20px 50px;
+		}
+	}
+}
+
+
+// $color: red;
+// $col: 25;
+// $num: 10px;
+
+// h1{
+// 	color:$color;
+// }
+
+// @for $i from 1 through $col{
+// 	.col-#{$i}{
+// 		width: 100%/$col*$i;
+// 	}
+// 	.push-#{$i}{
+// 		margin-left: 100%/$col*$i;
+// 	}
+
+// }
+
+// p{
+// 	color:darken($color, 20%);
+// }
+
+// div{
+// 	color:lighten($color, 30%);
+// 	margin: ($num)-4;
+// }
+
+// p{
+// 	padding: $num/2;
+// }
+
+//  p { @include sexy-border($color: blue); }
+
+// p{
+// 	shadow-box: 1px $num $num*2 $color;
+// }
+
+// .container { width: 100%; }
+
+// article[role="main"] {
+//   float: left;
+//   width: 600px / 960px * 100%;
+// }
+
+// aside[role="complimentary"] {
+//   float: right;
+//   width: 300px / 960px * 100%;
+// }
+
