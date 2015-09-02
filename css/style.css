@@ -132,6 +132,12 @@ section::after, .about-head::after, .pic-container::after {
   width: 100%;
 }
 
+#contact iframe {
+  max-width: 1200px;
+  width: 100%;
+  height: 500px;
+}
+
 @media screen and (min-width: 768px) {
   #myNavbar {
     background-color: #333333;
