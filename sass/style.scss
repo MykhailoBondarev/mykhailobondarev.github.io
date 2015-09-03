@@ -9,7 +9,7 @@ $basicfont: Squada One, Arial;
 html, body{
 	font-family: $basicfont;
 	font-size: $fontsize*1.5;	
-	background-color: $bgcolor;	
+	background-color: $decorcolor;	
 	color: $textcolor;	
 }
 
@@ -66,13 +66,19 @@ nav, header {
 .social-btn::before{
 	font-size: $fontsize*2.7;
 	margin: 0 5px 0 5px;	
-	transition: 2s;
+	-webkit-transition: 2s;	
+	   -moz-transition: 2s;	
+	     -o-transition: 2s;	
+	        transition: 2s;	
 }
 
 .social-btn:hover::before, .social-btn:focus::before{
-	color: $hovercolor;	
-	-webkit-transform: rotate(360deg);
-  	transform: rotate(360deg);
+	color: $hovercolor;		
+  	-webkit-transform: rotate(360deg);		
+  	   -moz-transform: rotate(360deg);		
+  	    -ms-transform: rotate(360deg);		
+  	     -o-transform: rotate(360deg);		
+  	        transform: rotate(360deg);  	
 }
 
 .container{	
@@ -87,7 +93,10 @@ section{
 	height: auto;
 	border-top: 1px solid $textcolor;
 	border-bottom: 3px solid $textcolor;
-	box-shadow: 0 0 100px 1px rgba(105,105,105, .7);
+	-webkit-box-shadow: 0 0 100px 1px rgba(105,105,105, .7);
+	   -moz-box-shadow: 0 0 100px 1px rgba(105,105,105, .7);
+	        box-shadow: 0 0 100px 1px rgba(105,105,105, .7);
+	background-color: $bgcolor;
 }
 
 #about{
@@ -98,11 +107,26 @@ section{
 		max-width: 250px;
 		width: 100%;
 		margin: 20px 0;
-		border-radius: 20%;
+		-webkit-border-radius: 20%;
+		   -moz-border-radius: 20%;
+		        border-radius: 20%;
 		border: 7px solid $textcolor;
-		transition: 2s;
+		-webkit-transition: 2s;
+		   -moz-transition: 2s;
+		     -o-transition: 2s;
+		        transition: 2s;
 	}	
+
+	.about-head{
+		.about-text{
+			h3{
+				font-size: $fontsize*2;
+			}
+		}
+	}
 }
+
+
 
 section::after, .about-head::after, .pic-container::after{
 		content: "";
@@ -159,12 +183,17 @@ section::after, .about-head::after, .pic-container::after{
 	li{		
 		float: left;			
 		a{					
-			border-radius: 0;
+			-webkit-border-radius: 0;					
+			   -moz-border-radius: 0;					
+			        border-radius: 0;
 			text-align: center;
 			font-size: $fontsize*1.5;
 			color: darken($textcolor, 30%);
 			text-decoration: none;	
-			transition-duration: 1s;
+			-webkit-transition-duration: 1s;	
+			   -moz-transition-duration: 1s;	
+			     -o-transition-duration: 1s;	
+			        transition-duration: 1s;
 			position: relative;		
 		 }
 		 a:hover, a:focus{
@@ -183,8 +212,11 @@ section::after, .about-head::after, .pic-container::after{
 			left: 0;	
 			width: 0;			
 			height: 5px;					
-			background-color: darken($textcolor, 90%);
-			transition-duration: 1s;					
+			background-color: darken($textcolor, 90%);			
+			-webkit-transition-duration: 1s;			
+			   -moz-transition-duration: 1s;			
+			     -o-transition-duration: 1s;			
+			        transition-duration: 1s;
 		 }
 
 		 a:hover::after{

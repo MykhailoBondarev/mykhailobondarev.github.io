@@ -1,7 +1,7 @@
 html, body {
   font-family: Squada One, Arial;
   font-size: 21px;
-  background-color: #000;
+  background-color: #2abf5e;
   color: #fff;
 }
 
@@ -58,12 +58,18 @@ nav, header {
 .social-btn::before {
   font-size: 37.8px;
   margin: 0 5px 0 5px;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -o-transition: 2s;
   transition: 2s;
 }
 
 .social-btn:hover::before, .social-btn:focus::before {
   color: #71f605;
   -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 
@@ -79,7 +85,10 @@ section {
   height: auto;
   border-top: 1px solid #fff;
   border-bottom: 3px solid #fff;
+  -webkit-box-shadow: 0 0 100px 1px rgba(105, 105, 105, 0.7);
+  -moz-box-shadow: 0 0 100px 1px rgba(105, 105, 105, 0.7);
   box-shadow: 0 0 100px 1px rgba(105, 105, 105, 0.7);
+  background-color: #000;
 }
 
 #about {
@@ -91,9 +100,17 @@ section {
   max-width: 250px;
   width: 100%;
   margin: 20px 0;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
   border-radius: 20%;
   border: 7px solid #fff;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -o-transition: 2s;
   transition: 2s;
+}
+#about .about-head .about-text h3 {
+  font-size: 28px;
 }
 
 section::after, .about-head::after, .pic-container::after {
@@ -146,11 +163,16 @@ section::after, .about-head::after, .pic-container::after {
     float: left;
   }
   #myNavbar li a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0;
     text-align: center;
     font-size: 21px;
     color: #b3b3b3;
     text-decoration: none;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
     transition-duration: 1s;
     position: relative;
   }
@@ -171,6 +193,9 @@ section::after, .about-head::after, .pic-container::after {
     width: 0;
     height: 5px;
     background-color: #1a1a1a;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
     transition-duration: 1s;
   }
   #myNavbar li a:hover::after {
