@@ -23,12 +23,19 @@ nav, header {
 }
 
 .navbar-brand{
-	width: 90px;
+	width: 121px;
 	padding: 7px 10px 7px 10px;
 	b{
 		text-transform: uppercase;
-		text-decoration: underline;
-		word-break: break-all;
+		color: $decorcolor;
+		// text-decoration: underline;
+		// word-break: break-all;
+	}
+	img{
+		// margin-left: 20px;
+		height: 40px;
+		width: 43px; 
+		display: inline;
 	}
 }
 
@@ -174,6 +181,14 @@ section::after, .about-head::after, .pic-container::after{
 		max-width: 1200px;
 		width: 100%;
 		height: 500px;
+	}
+}
+
+footer{
+	.container{
+		.copyright{
+			margin: 15px 40px;
+		}
 	}
 }
 
