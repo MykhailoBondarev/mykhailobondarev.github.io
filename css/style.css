@@ -3,6 +3,7 @@ html, body {
   font-size: 21px;
   background-color: #2abf5e;
   color: #fff;
+  font-weight: 100;
 }
 
 nav, header {
@@ -15,10 +16,11 @@ nav, header {
 }
 
 .navbar-brand {
-  width: 121px;
+  width: 77px;
   padding: 7px 10px 7px 10px;
 }
 .navbar-brand b {
+  display: none;
   text-transform: uppercase;
   color: #2abf5e;
 }
@@ -131,8 +133,17 @@ section::after, .about-head::after, .pic-container::after {
   padding: 20px;
   margin: 20px;
 }
-#portfolio img {
+#portfolio a {
   max-width: 300px;
+  width: 100%;
+}
+#portfolio a img {
+  max-width: 295px;
+  width: 100%;
+}
+#portfolio .ih-item.square {
+  max-width: 300px;
+  width: 100%;
 }
 
 #education {
@@ -147,10 +158,17 @@ section::after, .about-head::after, .pic-container::after {
 }
 #education .edu-box a {
   display: block;
+  max-width: 400px;
+  width: 100%;
 }
 #education .edu-box a img {
   max-width: 400px;
   width: 100%;
+}
+#education .edu-box .ih-item.square {
+  max-width: 405px;
+  width: 100%;
+  height: auto;
 }
 
 #contact iframe {
@@ -213,6 +231,13 @@ footer .container .copyright {
     width: 100%;
   }
 
+  .navbar-brand {
+    width: 125px;
+  }
+  .navbar-brand b {
+    display: inline;
+  }
+
   .social-container {
     position: absolute;
     top: 0;
@@ -230,11 +255,16 @@ footer .container .copyright {
   }
 
   #education .edu-box a img {
-    width: 200px;
+    width: 160px;
   }
 
   .ih-item.square {
-    width: 215px;
+    width: 180px;
     height: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  #education .edu-box a img {
+    width: 400px;
   }
 }

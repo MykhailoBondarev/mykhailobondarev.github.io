@@ -11,6 +11,7 @@ html, body{
 	font-size: $fontsize*1.5;	
 	background-color: $decorcolor;	
 	color: $textcolor;	
+	font-weight: 100;
 }
 
 nav, header {	
@@ -23,9 +24,10 @@ nav, header {
 }
 
 .navbar-brand{
-	width: 121px;
+	width: 77px;
 	padding: 7px 10px 7px 10px;
 	b{
+		display: none;
 		text-transform: uppercase;
 		color: $decorcolor;
 		// font-family: Arial Narrow;
@@ -83,7 +85,7 @@ nav, header {
   	   -moz-transform: rotate(360deg);		
   	    -ms-transform: rotate(360deg);		
   	     -o-transform: rotate(360deg);		
-  	        transform: rotate(360deg);  	
+  	        transform: rotate(360deg);   	        	
 }
 
 .container{	
@@ -148,9 +150,18 @@ section::after, .about-head::after, .pic-container::after{
 		padding: 20px;
 		margin: 20px;		
 	}
-	img{
+	a{
 		max-width: 300px;
+		width: 100%;
+		img{
+			max-width: 295px;
+			width: 100%;
+		}
 	}
+	.ih-item.square{
+		max-width: 300px;
+		width: 100%;			
+	}	
 }
 
 #education{
@@ -165,12 +176,18 @@ section::after, .about-head::after, .pic-container::after{
 		}
 		a{
 			display: block;
-
+			max-width: 400px;
+			width: 100%;
 			img{
 				max-width: 400px;
 				width: 100%;
 			}
 		}
+		.ih-item.square{
+			max-width: 405px;
+			width: 100%;
+			height: auto;
+		}	
 	}
 }
 
@@ -242,6 +259,12 @@ footer{
 	  }
 	}
 
+	.navbar-brand{
+		width: 125px;	
+		b{
+			display: inline;
+		}
+	}
 	.social-container{
 		position: absolute;
 		top: 0;
@@ -263,17 +286,29 @@ footer{
 		.edu-box{
 			a{
 				img{
-					width: 200px;
+					width: 160px;
 				}
 			}
 		}
 	}
 	.ih-item.square{
-		width: 215px;
+		width: 180px;
 		height: auto;
 	}	
 }
 
+@media screen and (min-width: 992px) {
+	#education{ 
+		.edu-box{
+			a{
+				img{
+					width: 400px;
+				}
+			}
+
+		}
+	}
+}
 
 // $color: red;
 // $col: 25;
