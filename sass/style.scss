@@ -29,7 +29,7 @@ nav, header {
 	b{
 		display: none;
 		text-transform: uppercase;
-		color: $decorcolor;
+		color: $decorcolor;		
 		// font-family: Arial Narrow;
 	}
 	img{		
@@ -114,9 +114,9 @@ section{
 		max-width: 250px;
 		width: 100%;
 		margin: 20px 0;
-		-webkit-border-radius: 20%;
-		   -moz-border-radius: 20%;
-		        border-radius: 20%;
+		-webkit-border-radius: 43%;
+		   -moz-border-radius: 43%;
+		        border-radius: 43%;
 		border: 7px solid $textcolor;
 		-webkit-transition: 2s;
 		   -moz-transition: 2s;
@@ -160,7 +160,8 @@ section::after, .about-head::after, .pic-container::after{
 	}
 	.ih-item.square{
 		max-width: 300px;
-		width: 100%;			
+		width: 97%;
+		border: 3px solid $textcolor; 			
 	}	
 }
 
