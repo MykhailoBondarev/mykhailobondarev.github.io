@@ -167,7 +167,7 @@ section::after, .about-head::after, .pic-container::after{
 }
 
 #education{
-	font-family: $basicfont;
+	
 	.edu-box{
 		p{
 			margin: 0;
@@ -205,6 +205,11 @@ footer{
 	.container{
 		.copyright{
 			margin: 15px 40px;
+			float: left;
+		}
+		.validator{
+			margin: 15px 10px;
+			float: right;
 		}
 	}
 }

@@ -148,9 +148,6 @@ section::after, .about-head::after, .pic-container::after {
   border: 3px solid #fff;
 }
 
-#education {
-  font-family: Squada One, Arial;
-}
 #education .edu-box p {
   margin: 0;
 }
@@ -181,6 +178,11 @@ section::after, .about-head::after, .pic-container::after {
 
 footer .container .copyright {
   margin: 15px 40px;
+  float: left;
+}
+footer .container .validator {
+  margin: 15px 10px;
+  float: right;
 }
 
 @media screen and (min-width: 768px) {
