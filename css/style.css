@@ -72,6 +72,7 @@ nav, header {
 
 .social-btn:hover::before, .social-btn:focus::before {
   color: #71f605;
+  display: inline-block;
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
   -ms-transform: rotate(360deg);

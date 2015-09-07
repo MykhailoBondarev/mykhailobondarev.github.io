@@ -80,7 +80,8 @@ nav, header {
 }
 
 .social-btn:hover::before, .social-btn:focus::before{
-	color: $hovercolor;		
+	color: $hovercolor;	
+	display: inline-block;	
   	-webkit-transform: rotate(360deg);		
   	   -moz-transform: rotate(360deg);		
   	    -ms-transform: rotate(360deg);		
@@ -230,7 +231,7 @@ footer{
 		 a:hover, a:focus{
 		 	color: darken($textcolor, 70%);
 		 	background: lighten($bgcolor, 90%);	
-		 	font-size: inherit;	 	
+		 	font-size: inherit;
 		 }
 		 a:focus{
 		 	color: darken($textcolor, 70%);
