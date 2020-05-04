@@ -16,7 +16,7 @@ nav, header {
 }
 
 .navbar-brand {
-  width: 77px;
+  width: 100%;
   padding: 7px 10px 7px 10px;
 }
 .navbar-brand b {
@@ -235,9 +235,6 @@ footer .container .validator {
     width: 100%;
   }
 
-  .navbar-brand {
-    width: 125px;
-  }
   .navbar-brand b {
     display: inline;
   }
