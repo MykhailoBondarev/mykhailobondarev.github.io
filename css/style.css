@@ -16,7 +16,7 @@ nav, header {
 }
 
 .navbar-brand {
-  width: 100%;
+  width: 70%;
   padding: 7px 10px 7px 10px;
 }
 .navbar-brand b {
@@ -53,8 +53,8 @@ nav, header {
   width: auto;
 }
 
-.social-btn {
-  color: #2abf5e;
+.social-btn, .green {
+  color: #2abf5e;  
 }
 
 .social-btn:hover, .social-btn:focus {
@@ -71,7 +71,7 @@ nav, header {
 }
 
 .social-btn:hover::before, .social-btn:focus::before {
-  color: #71f605;
+  color: #71f605;  
   display: inline-block;
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -102,6 +102,7 @@ section {
   margin-top: 100px;
   font-size: 16.8px;
   text-align: center;
+  position: relative;
 }
 #about img {
   max-width: 250px;
@@ -186,6 +187,10 @@ footer .container .validator {
 }
 
 @media screen and (min-width: 768px) {
+  .navbar-brand {
+      width: 100%;
+  } 
+
   #myNavbar {
     background-color: #333333;
   }
@@ -264,8 +269,82 @@ footer .container .validator {
     height: auto;
   }
 }
+
+.social-container-top {
+    display: none;
+}
+
 @media screen and (min-width: 992px) {
   #education .edu-box a img {
     width: 400px;
   }
+
+  .social-container-top {
+      display: block;
+  }
+}
+
+.social-container-bottom {
+    position: relative;
+    text-align: center;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+quote:before {
+    content: '';
+    background:url('../img/quote-start.png');
+    background-size:cover;
+    position:absolute;
+    width:20px;
+    height:35px;
+    margin-left:-22px;
+    margin-top:-10px;
+}
+
+quote:after {
+    content: '';
+    background:url('../img/quote-end.png');
+    background-size:cover;
+    position:absolute;
+    width:20px;
+    height:40px;
+    margin-left:0;
+    margin-top:-17px;
+}
+
+.alert {
+  background-color: red;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 723px) {
+  #portfolio .pic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+.owl-carousel .owl-item img {
+  max-width: 30%;
+  margin: 20px auto;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+@media screen and (min-width: 650px) {
+    .owl-carousel .owl-item img {
+      max-width: 15%;
+      float: left;
+      margin-right: 20px;
+    }
 }

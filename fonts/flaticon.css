@@ -41,4 +41,17 @@ margin-left: 20px;
 .flaticon-wrench117:before {
 	content: "\e008";
 }
-.flaticon-logotype:before { content: "\f100"; }
+
+.icon-whatsapp:before {
+	content: '';
+	background-image: url(../fonts/whatsapp-icon.svg);
+	background-size: cover;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+}
+
+
+.icon-whatsapp:hover::before {	
+	background-image: url(../fonts/whatsapp-icon-hover.svg);
+}
